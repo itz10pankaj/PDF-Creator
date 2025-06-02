@@ -43,7 +43,7 @@ const createPdf= async (templateHtml) => {
                 path: local_pdf_path,
                 printBackground: true,
                 landscape: false,
-                //  format:'letter',
+                scale:0.85
              };
 
             const boundingBox = await page.$eval('.page', el => {
